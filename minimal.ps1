@@ -31,8 +31,8 @@ $tweaks = @(
   "CreateRestorePoint",
 	### External Program Setup
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
-	"Install7Zip",
-	"InstallNotepadplusplus",
+	###"Install7Zip",
+	###"InstallNotepadplusplus",
 
 	### Windows Apps
 	"DebloatAll",
@@ -149,7 +149,7 @@ $tweaks = @(
 	# "DisableThumbsDB",              # "EnableThumbsDB",
 
 	### Application Tweaks ###
-  "EnableOneDrive",
+ ### "EnableOneDrive",
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
@@ -159,7 +159,7 @@ $tweaks = @(
 	"UninstallInternetExplorer",  # "InstallInternetExplorer",
 	"UninstallWorkFolders",       # "InstallWorkFolders",
 	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
-	# "InstallHyperV",              # "UninstallHyperV",
+	"InstallHyperV",              # "UninstallHyperV",
 	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
 	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
 	"InstallPDFPrinter"		# "UninstallPDFPrinter",
@@ -175,7 +175,7 @@ $tweaks = @(
 	# "EnableAudio",                # "DisableAudio",
 
 	### Unpinning ###
-	#"UnpinStartMenuTiles",
+	"UnpinStartMenuTiles",
 	#"UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
@@ -196,9 +196,9 @@ Function InstallTitusProgs {
 	./OOSU10.exe ooshutup10.cfg /quiet
 }
 
-Function InstallAdobe {
-	Write-Output "Installing Adobe Acrobat Reader"
-	choco install adobereader -y
+#Function InstallAdobe {
+#	Write-Output "Installing Adobe Acrobat Reader"
+#	choco install adobereader -y
 }
 
 Function InstallJava {
@@ -206,19 +206,19 @@ Function InstallJava {
 	choco install jre8 -y
 }
 
-Function Install7Zip {
-	Write-Output "Installing 7-Zip"
-	choco install 7zip -y
+#Function Install7Zip {
+#	Write-Output "Installing 7-Zip"
+#	choco install 7zip -y
 }
 
-Function InstallNotepadplusplus {
-	Write-Output "Installing Notepad++"
-	choco install notepadplusplus -y
+#Function InstallNotepadplusplus {
+#	Write-Output "Installing Notepad++"
+#	choco install notepadplusplus -y
 }
 
-Function InstallMediaPlayerClassic {
-	Write-Output "Installing Media Player Classic (VLC Alternative)"
-	choco install mpc-hc -y
+#Function InstallMediaPlayerClassic {
+#	Write-Output "Installing Media Player Classic (VLC Alternative)"
+#	choco install mpc-hc -y
 }
 
 ##########
